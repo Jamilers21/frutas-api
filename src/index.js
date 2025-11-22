@@ -17,10 +17,14 @@ server.get("/pseudofrutos", (_,response) =>{
         {
             name:"Maçã",
             type:"pseudofruto",
-            
+
         }
     ])
+})
 
-
-
+server.get("/bagas", (_,response) => { 
+ response.json([
+   { name:"Laranja", type: "baga"},
+   { name:"Banana", type:"baga"},
+ ])
 })
