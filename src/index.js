@@ -28,3 +28,10 @@ server.get("/bagas", (_,response) => {
    { name:"Banana", type:"baga"},
  ])
 })
+
+server.get("/frutos-secos",(_,response) =>{
+ response.json([
+    {name:"Noz", "type": "fruto seco"},
+    {name:"Amendoa", "type": "fruto seco"},
+ ]) 
+})
